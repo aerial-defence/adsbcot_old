@@ -46,7 +46,6 @@ setuptools.setup(
     include_package_data=True,
     install_requires=[
         'pycot >= 2.5.0',
-        'pytak >= 3.1.0',
         'aiohttp'
     ],
     extras_require={
