@@ -176,8 +176,8 @@ class ADSBNetWorker(ADSBWorker):
                     flight = v.get("call", k)
                     alt_geom = v.get("alt")
                     gs = v.get("gs")
-                    track = v.get("track")
-                    if lat and lon and flight and alt_geom and gs and track:
+                    trk = v.get("trk")
+                    if lat and lon and flight and alt_geom and gs and trk:
                         aircraft = [
                             {
                                 "hexa": k,
@@ -186,7 +186,7 @@ class ADSBNetWorker(ADSBWorker):
                                 "flight": flight.replace("_", ""),
                                 "alt_geom": alt_geom,
                                 "gs": gs,
-                                "track": track
+                                "trk": trk
                             }
                         ]
                         await self.handle_message(aircraft)
