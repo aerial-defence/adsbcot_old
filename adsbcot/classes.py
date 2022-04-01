@@ -180,7 +180,7 @@ class ADSBNetWorker(ADSBWorker):
                     if lat and lon and flight and alt_geom and gs and track:
                         aircraft = [
                             {
-                                "hex": k,
+                                "hexa": k,
                                 "lat": lat,
                                 "lon": lon,
                                 "flight": flight.replace("_", ""),
