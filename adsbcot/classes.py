@@ -177,7 +177,7 @@ class ADSBNetWorker(ADSBWorker):
                     alt_geom = v.get("alt")
                     gs = v.get("gs")
                     track = v.get("track")
-                    if lat and lon and flight and alt_geom and gs:
+                    if lat and lon and flight and alt_geom and gs and track:
                         aircraft = [
                             {
                                 "hex": k,
