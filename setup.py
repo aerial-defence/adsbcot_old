@@ -4,7 +4,7 @@
 """
 Setup for the ADS-B Cursor-on-Target Gateway.
 
-Source:: https://github.com/aerial-defence/adsbcot
+Source:: https://github.com/aerial-defence/adsbcot_old
 """
 
 import os
